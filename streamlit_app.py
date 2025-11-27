@@ -3,7 +3,15 @@ import math
 
 # --- App Configuration ---
 st.set_page_config(page_title="Civil Site Tools", page_icon="🏗️")
-
+# --- HIDE STREAMLIT STYLE ---
+hide_st_style = """
+            <style>
+            #MainMenu {visibility: hidden;}
+            footer {visibility: hidden;}
+            header {visibility: hidden;}
+            </style>
+            """
+st.markdown(hide_st_style, unsafe_allow_html=True)
 st.title("💧 Civil Engineer Tools")
 st.caption("Storage Estimation & Pipe size quick check only.")
 st.markdown("---")
