@@ -15,7 +15,7 @@ hide_st_style = """
 st.markdown(hide_st_style, unsafe_allow_html=True)
 
 st.title("🇬🇧 UK Drainage Quick-Check")
-st.caption("Site Meeting Estimator | FSR Rainfall & Colebrook-White")
+st.caption("For quick estimation only")
 st.markdown("---")
 
 # ==========================================
