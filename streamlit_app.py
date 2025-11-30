@@ -2,7 +2,7 @@ import streamlit as st
 import math
 
 # --- App Configuration ---
-st.set_page_config(page_title="UK Drainage Check", page_icon="🇬🇧")
+st.set_page_config(page_title="The Civil Engineer's Pocket Toolkit", page_icon="🇬🇧")
 
 # --- CUSTOM CSS ---
 hide_st_style = """
