@@ -37,7 +37,7 @@ with col1:
         "Glasgow (Scotland)": 17.0,
         "Belfast (NI)": 16.0
     }
-    selected_city = st.selectbox("📍 Region:", list(city_m5_60.keys()))
+    selected_city = st.selectbox("Region:", list(city_m5_60.keys()))
     return_period = st.selectbox("Return Period:", ["1 in 30 Years", "1 in 100 Years"])
     add_cc = st.checkbox("Apply +40% CC?", value=True)
 
@@ -74,7 +74,7 @@ vol_in = area_m2 * rainfall_depth_m
 vol_out = (allowable_discharge * (duration_min * 60)) / 1000
 storage_req = max(0, vol_in - vol_out)
 
-st.success(f"📦 **Required Storage: {storage_req:.2f} m³**")
+st.success(f"**Required Storage: {storage_req:.2f} m³**")
 
 st.markdown("---")
 
@@ -111,11 +111,11 @@ if gradient_denominator > 0:
     c2.write(f"**Vel:** {velocity:.2f} m/s")
 
     if velocity < 1.0:
-        st.error(f"⛔ Low Velocity")
+        st.error(f"Low Velocity")
     elif velocity > 3.0:
-        st.warning(f"⚠️ High Velocity")
+        st.warning(f"High Velocity")
     else:
-        st.success(f"✅ Self-Cleansing OK")
+        st.success(f"Self-Cleansing OK")
 
 st.markdown("---")
 
@@ -157,4 +157,4 @@ else:
 
     # Display Results
     st.info(f"**Effective Water Depth:** {water_depth:.2f} m")
-    st.success(f"💧 **Available Storage Volume:** {pond_volume:.2f} m³")
+    st.success(f"**Available Storage Volume:** {pond_volume:.2f} m³")
